@@ -4,7 +4,7 @@ from confluent_kafka import Consumer
 from confluent_kafka.admin import AdminClient
 
 BROKER_URL = 'localhost:9092'
-TOPIC_NAME = 'police.service.calls'
+TOPIC_NAME = 'police.sf.calls'
 
 
 async def consume(topic_name):

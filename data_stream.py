@@ -27,7 +27,7 @@ def run_spark_job(spark):
         .readStream \
         .format("kafka") \
         .option("kafka.bootstrap.servers", "localhost:9092") \
-        .option("subscribe", "police-calls") \
+        .option("subscribe", "police.sf.calls") \
         .option("startingOffsets", "earliest") \
         .option("maxOffsetPerTrigger", 200) \
         .load()

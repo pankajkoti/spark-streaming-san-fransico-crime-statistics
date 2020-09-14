@@ -6,7 +6,7 @@ def run_kafka_server():
 
     producer = producer_server.ProducerServer(
         input_file=input_file,
-        topic="police.service.calls",
+        topic="police.sf.calls",
         bootstrap_servers="localhost:9092",
         client_id="client-2"
     )
