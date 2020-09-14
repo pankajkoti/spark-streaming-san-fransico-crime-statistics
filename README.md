@@ -10,7 +10,7 @@ We try to answer the following question with the dataset:
 What are the top types of crimes in San Fransisco?
 
 
-###Development Environment
+### Development Environment
 We need to set up our environment properly as described below:
     
     1. Spark 2.4.3
@@ -19,7 +19,7 @@ We need to set up our environment properly as described below:
     4. Kafka build with Scala 2.11.x
     5. Python 3.6.x or 3.7.x
     
-###Environment Setup 
+### Environment Setup 
 For Macs or Linux:
 Download Spark from https://spark.apache.org/downloads.html. Choose "Prebuilt for Apache Hadoop 2.7 and later."
 Unpack Spark in one of your folders (I usually put all my dev requirements in /home/users/user/dev).
@@ -84,7 +84,7 @@ spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.3.4 --maste
 ### Screenshots:
 Please unzip and refer to the screenshots.zip to observe my runtime screenshots
 
-###Project Questions:
+### Project Questions:
 1. How did changing values on the SparkSession property parameters affect the throughput and latency of the data?
     <br/> An important property is the maxOffsetsPerTrigger and differences can be seen by increasing or decreasing this value
 2. What were the 2-3 most efficient SparkSession property key/value pairs? Through testing multiple variations on values, how can you tell these were the most optimal?
